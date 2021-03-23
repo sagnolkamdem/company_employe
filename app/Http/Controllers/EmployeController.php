@@ -19,7 +19,7 @@ class EmployeController extends Controller
      */
     public function index()
     {
-        $employe = Employe::paginate(10);
+        $employe = Employe::with('company')->paginate(10);
         return view('employe-list', compact('employe'));
     }
 

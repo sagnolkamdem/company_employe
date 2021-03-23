@@ -14,6 +14,6 @@ class Company extends Model
 
     public function employe()
     { 
-        return $this->belongsTo(Employe::class); 
+        return $this->hasMany('App\Employe'); 
     }
 }

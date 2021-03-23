@@ -12,8 +12,8 @@ class Employe extends Model
 
     protected $fillable = ['prenom', 'nom_de_famille', 'company_id', 'email', 'telephone', 'created_at'];
 
-    public function companies() 
+    public function company() 
     { 
-        return $this->hasMany(Company::class); 
+        return $this->belongsTo('App\Company'); 
     }
 }

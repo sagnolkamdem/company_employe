@@ -30,7 +30,7 @@
                                         <td>{{ $employ->id }}</td>
                                         <td><strong>{{ $employ->prenom }}</strong></td>
                                         <td><strong>{{ $employ->nom_de_famille }}</strong></td>
-                                        <td><strong>{{ $employ->company_id }}</strong></td>
+                                        <td><strong>{{ $employ->company->nom }}</strong></td>
                                         <td><strong>{{ $employ->email }}</strong></td>
                                         <td><strong>{{ $employ->telephone }}</strong></td>
                                         <td>
